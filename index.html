@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="description" content="Personal portfolio website for Wyncel, a BSIT student at Polytechnic University of the Philippines." />
+	<title>Wyncel Portfolio</title>
+	<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+	<header class="site-header">
+		<div class="container nav">
+			<a class="brand" href="#home">
+				<!-- Brand mark now uses the same profile photo for a consistent top header image. -->
+				<span class="brand-mark">
+					<img class="brand-photo" src="images/salomiapic.jpg" alt="Cel's profile picture" />
+				</span>
+				<span>Wyncel Portfolio</span>
+			</a>
+			<button class="nav-toggle" type="button" aria-controls="primary-navigation" aria-expanded="false">
+				Menu
+			</button>
+			<nav class="nav-links" id="primary-navigation" aria-label="Main navigation">
+				<a href="#home">Home</a>
+				<a href="#about">About Me</a>
+				<a href="#skills">Skills</a>
+				<a href="#experience">Experience</a>
+				<a href="#projects">Projects</a>
+				<a href="Wyncel%20C.%20Salomia.pdf" target="_blank" rel="noreferrer">Resume</a>
+				<a href="#contact">Contact</a>
+			</nav>
+		</div>
+	</header>
+
+	<main>
+		<section class="hero" id="home">
+			<div class="container hero-grid">
+				<div class="reveal">
+					<div class="eyebrow">College Student • Information Technology</div>
+					<h1>Hi, I’m Wyncel. I learn technology by building useful web projects.</h1>
+					<p>
+						Hi! I'm Wyncel, a college IT student who is passionate about technology and learning new things.
+						I enjoy exploring web development and creating projects that can solve real-world problems.
+					</p>
+					<div class="hero-actions">
+						<a class="button primary" href="#projects">View Projects</a>
+						<a class="button secondary" href="#contact">Get In Touch</a>
+					</div>
+				</div>
+
+				<aside class="hero-card reveal delay-1" aria-label="Profile summary">
+					<div class="profile-badge">Polytechnic University of the Philippines</div>
+					<!-- Profile photo replaces the placeholder avatar in the hero card. -->
+					<img class="profile-photo" src="images/salomiapic.jpg" alt="Cel's profile picture" />
+					<h2>Wyncel</h2>
+					<p>
+						Bachelor of Science in Information Technology student at Polytechnic University of the Philippines.
+						Based in Mandaluyong City, Philippines.
+					</p>
+					<div class="stats">
+						<div class="stat">
+							<strong>BSIT</strong>
+							Program
+						</div>
+						<div class="stat">
+							<strong>PUP</strong>
+							University
+						</div>
+						<div class="stat">
+							<strong>Mandaluyong</strong>
+							Location
+						</div>
+					</div>
+				</aside>
+			</div>
+		</section>
+
+		<section id="about">
+			<div class="container section-card reveal delay-1">
+				<div class="section-title">
+					<span>About Me</span>
+					<h2>Who I am and what I’m learning</h2>
+				</div>
+				<div class="about-grid">
+					<div class="info-box">
+						<h3>Background</h3>
+						<p>
+							I am a college student interested in technology and web development. I enjoy learning
+							new programming skills and applying them to different projects.
+						</p>
+					</div>
+					<div class="info-box">
+						<h3>What I value</h3>
+						<p>
+							I like projects that can help solve real-world problems. I am always looking for
+							opportunities to improve my skills, gain experience, and grow as a future IT professional.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="skills">
+			<div class="container section-card reveal delay-2">
+				<div class="section-title">
+					<span>Skills</span>
+					<h2>Tools I’m comfortable with</h2>
+				</div>
+				<div class="skills-grid">
+					<div class="skill-card">
+						<h3>HTML</h3>
+						<p>Building semantic page structures and accessible content.</p>
+					</div>
+					<div class="skill-card">
+						<h3>CSS</h3>
+						<p>Creating layouts, spacing, responsive design, and clean visuals.</p>
+					</div>
+					<div class="skill-card">
+						<h3>Java</h3>
+						<p>Writing structured programs and learning core programming concepts.</p>
+					</div>
+					<div class="skill-card">
+						<h3>JavaScript</h3>
+						<p>Adding interactivity, simple logic, and dynamic page behavior.</p>
+					</div>
+					<div class="skill-card">
+						<h3>PHP</h3>
+						<p>Learning backend basics and server-side scripting.</p>
+					</div>
+					<div class="skill-card">
+						<h3>MySQL</h3>
+						<p>Working with databases to store and organize information.</p>
+					</div>
+					<div class="skill-card">
+						<h3>Git / GitHub</h3>
+						<p>Tracking changes and sharing code with version control.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="experience">
+			<div class="container section-card reveal delay-3">
+				<div class="section-title">
+					<span>Experience</span>
+					<h2>Internship experience</h2>
+				</div>
+				<div class="experience-grid">
+					<!-- Experience cards are kept compact so they fit the same clean portfolio layout. -->
+					<article class="experience-card">
+						<div class="experience-tag">IT Support Intern</div>
+						<!-- Company header keeps the logo, name, and location visually grouped. -->
+						<div class="experience-company">
+							<div class="company-logo-wrap">
+								<img class="company-logo" src="images/logo1.jpg" alt="Mandaluyong City Civil Registry logo" />
+							</div>
+							<div class="company-meta">
+								<h3>Mandaluyong City Civil Registry</h3>
+								<p class="company-location">
+									<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+										<path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" />
+										<circle cx="12" cy="10" r="3" />
+									</svg>
+									<span>2/F Executive Bldg., City Hall Complex, Maysilo Circle</span>
+								</p>
+							</div>
+						</div>
+						<p>
+							Supported daily office operations through <strong>Microsoft Excel</strong>, technical support,
+							record handling, and client assistance.
+						</p>
+						<ul class="experience-list">
+							<li>Encoded newborn records, registry numbers, and birth details in Excel.</li>
+							<li>Troubleshot Epson printers, scanners, and office computer setups.</li>
+							<li>Used the internal web-based system to verify and search record files.</li>
+							<li>Prepared, filed, and cross-referenced birth record documents and logbooks.</li>
+							<li>Assisted clients, processed CTC requests, and drafted reply letters.</li>
+						</ul>
+					</article>
+
+					<article class="experience-card">
+						<div class="experience-tag">Backend Developer Intern</div>
+						<div class="experience-company">
+							<div class="company-logo-wrap">
+								<img class="company-logo" src="images/logo2.png" alt="SMESoft Inc. logo" />
+							</div>
+							<div class="company-meta">
+								<h3>SMESoft Inc.</h3>
+								<p class="company-location">
+									<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+										<path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" />
+										<circle cx="12" cy="10" r="3" />
+									</svg>
+									<span>Unit B, G/F, St. Mary's Square, 5 Central Avenue, St. Mary Street, Brgy. New Era, Quezon City, Philippines, 1107</span>
+								</p>
+							</div>
+						</div>
+						<p>
+							Worked on <strong>backend development</strong>, <strong>debugging</strong>, and <strong>database/data handling</strong>
+							for reporting, moderation, and order-related features.
+						</p>
+						<ul class="experience-list">
+							<li>Built a user reporting and moderation system with warnings, suspensions, and restrictions.</li>
+							<li>Implemented automated offense-level logic and real-time suspension countdowns.</li>
+							<li>Resolved issues in notifications, search, order history, routing, pagination, and data flow.</li>
+							<li>Improved the Reported Products section and seller restrictions for flagged products.</li>
+							<li>Worked with other interns and QA members to test, debug, and validate features.</li>
+						</ul>
+					</article>
+				</div>
+			</div>
+		</section>
+
+		<section id="projects">
+			<div class="container section-card reveal delay-3">
+				<div class="section-title">
+					<span>Projects</span>
+					<h2>Projects I’ve worked on</h2>
+				</div>
+				<div class="project-grid">
+					<article class="project-card">
+						<div class="project-tag">Web System</div>
+						<h3>EventBuds</h3>
+						<p>A web-based automated event scheduling system.</p>
+					</article>
+					<article class="project-card">
+						<div class="project-tag">Web System</div>
+						<h3>Shlefmark</h3>
+						<p>Personal portfolio website showcasing my skills, experience, and projects as an IT student.</p>
+					</article>
+					<article class="project-card">
+						<div class="project-tag">Web-based Game</div>
+						<h3>TindahanniWyncel</h3>
+						<p>Tindahan ni Wyncel is a simple HTML-based game where players act as a street food vendor and serve customers’ orders as quickly and correctly as possible.</p>
+					</article>
+				</div>
+			</div>
+		</section>
+
+		<section id="contact">
+			<div class="container section-card reveal delay-3">
+				<div class="section-title">
+					<span>Contact</span>
+					<h2>Let’s connect</h2>
+				</div>
+				<div class="contact-grid">
+					<div class="contact-card">
+						<h3>Email</h3>
+						<p>
+							<a class="contact-link" href="mailto:wyncelcsalomia@gmailcom">
+								<span>Say hello:</span> wyncelcsalomia@gmailcom
+							</a>
+						</p>
+					</div>
+					<div class="contact-card">
+						<h3>Location</h3>
+						<p>Mandaluyong City, Philippines</p>
+					</div>
+					<div class="contact-card">
+						<h3>GitHub</h3>
+						<p>
+							<a class="contact-link" href="https://github.com/wyncel08" target="_blank" rel="noreferrer">
+								<span>Profile:</span> github.com/wyncel08
+							</a>
+						</p>
+					</div>
+					<div class="contact-card">
+						<h3>LinkedIn</h3>
+						<p>
+							<a class="contact-link" href="https://www.linkedin.com/in/wyncel-salomia-03586a316" target="_blank" rel="noreferrer">
+								<span>Connect:</span> linkedin.com/in/wyncel-salomia-03586a316
+							</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer>
+		<div class="container">
+			<p id="footer-text">Built with HTML, CSS, and JavaScript.</p>
+		</div>
+	</footer>
+
+	<script src="script.js"></script>
+</body>
+</html>
