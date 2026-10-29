@@ -16,6 +16,11 @@
 	box-sizing: border-box;
 }
 
+img {
+	max-width: 100%;
+	height: auto;
+}
+
 html {
 	scroll-behavior: smooth;
 }
@@ -319,6 +324,34 @@ section {
 	padding: 18px;
 }
 
+.project-card {
+	display: flex;
+	flex-direction: column;
+}
+
+.project-link {
+	display: inline-flex;
+	align-items: center;
+	align-self: flex-start;
+	margin-top: auto;
+	padding: 9px 13px;
+	border: 1px solid rgba(56, 189, 248, 0.28);
+	border-radius: 999px;
+	color: #bfe9ff;
+	font-size: 0.9rem;
+	font-weight: 600;
+	transition: 0.2s ease;
+}
+
+.project-link:hover,
+.project-link:focus-visible {
+	color: var(--text);
+	background: rgba(56, 189, 248, 0.12);
+	border-color: rgba(56, 189, 248, 0.55);
+	transform: translateY(-2px);
+	outline: none;
+}
+
 .experience-company {
 	display: flex;
 	align-items: center;
@@ -557,5 +590,62 @@ footer {
 
 	.stats {
 		grid-template-columns: 1fr;
+	}
+}
+
+@media (max-width: 480px) {
+	.container {
+		width: calc(100% - 24px);
+	}
+
+	.hero {
+		padding: 56px 0 28px;
+	}
+
+	h1 {
+		font-size: clamp(2rem, 9vw, 2.6rem);
+		line-height: 1.05;
+	}
+
+	.hero p {
+		font-size: 1rem;
+	}
+
+	.hero-actions {
+		flex-direction: column;
+		align-items: stretch;
+	}
+
+	.hero-actions .button {
+		width: 100%;
+	}
+
+	.section-card,
+	.hero-card {
+		padding: 18px;
+	}
+
+	.eyebrow {
+		font-size: 0.85rem;
+		padding: 7px 12px;
+	}
+
+	.experience-company {
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 10px;
+	}
+
+	.company-logo-wrap {
+		width: 48px;
+		height: 48px;
+	}
+
+	.experience-list {
+		padding-left: 16px;
+	}
+
+	.contact-link {
+		flex-wrap: wrap;
 	}
 }
