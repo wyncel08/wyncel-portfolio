@@ -5,15 +5,15 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<meta name="description" content="Personal portfolio website for Wyncel, a BSIT student at Polytechnic University of the Philippines." />
 	<title>Wyncel Portfolio</title>
+	<link rel="icon" type="image/svg+xml" href="/wyncel-icon.svg" />
 	<link rel="stylesheet" href="style.css" />
 </head>
 <body>
 	<header class="site-header">
 		<div class="container nav">
 			<a class="brand" href="#home">
-				<!-- Brand mark now uses the same profile photo for a consistent top header image. -->
 				<span class="brand-mark">
-					<img class="brand-photo" src="images/salomiapic.jpg" alt="Cel's profile picture" />
+					<img class="brand-icon" src="wyncel-icon.svg" alt="Wyncel logo" />
 				</span>
 				<span>Wyncel Portfolio</span>
 			</a>
@@ -35,20 +35,20 @@
 	<main>
 		<section class="hero" id="home">
 			<div class="container hero-grid">
-				<div class="reveal">
-					<div class="eyebrow">College Student • Information Technology</div>
-					<h1>Hi, I’m Wyncel. I learn technology by building useful web projects.</h1>
-					<p>
+				<div>
+					<div class="eyebrow hero-entrance-item">College Student • Information Technology</div>
+					<h1 class="hero-entrance-item">Hi, I’m Wyncel. I learn technology by building useful web projects.</h1>
+					<p class="hero-entrance-item">
 						Hi! I'm Wyncel, a college IT student who is passionate about technology and learning new things.
 						I enjoy exploring web development and creating projects that can solve real-world problems.
 					</p>
-					<div class="hero-actions">
+					<div class="hero-actions hero-entrance-item">
 						<a class="button primary" href="#projects">View Projects</a>
 						<a class="button secondary" href="#contact">Get In Touch</a>
 					</div>
 				</div>
 
-				<aside class="hero-card reveal delay-1" aria-label="Profile summary">
+				<aside class="hero-card" aria-label="Profile summary">
 					<div class="profile-badge">Polytechnic University of the Philippines</div>
 					<!-- Profile photo replaces the placeholder avatar in the hero card. -->
 					<img class="profile-photo" src="images/salomiapic.jpg" alt="Cel's profile picture" />
@@ -108,31 +108,71 @@
 				</div>
 				<div class="skills-grid">
 					<div class="skill-card">
-						<h3>HTML</h3>
+						<div class="skill-header">
+							<div class="skill-logo-wrap">
+								<img src="images/skills/html5.svg" alt="" aria-hidden="true" width="32" height="32" loading="lazy" />
+							</div>
+							<h3>HTML</h3>
+						</div>
 						<p>Building semantic page structures and accessible content.</p>
 					</div>
 					<div class="skill-card">
-						<h3>CSS</h3>
+						<div class="skill-header">
+							<div class="skill-logo-wrap">
+								<img src="images/skills/css3.svg" alt="" aria-hidden="true" width="32" height="32" loading="lazy" />
+							</div>
+							<h3>CSS</h3>
+						</div>
 						<p>Creating layouts, spacing, responsive design, and clean visuals.</p>
 					</div>
 					<div class="skill-card">
-						<h3>Java</h3>
+						<div class="skill-header">
+							<div class="skill-logo-wrap">
+								<img src="images/skills/java.svg" alt="" aria-hidden="true" width="32" height="32" loading="lazy" />
+							</div>
+							<h3>Java</h3>
+						</div>
 						<p>Writing structured programs and learning core programming concepts.</p>
 					</div>
 					<div class="skill-card">
-						<h3>JavaScript</h3>
+						<div class="skill-header">
+							<div class="skill-logo-wrap">
+								<img src="images/skills/javascript.svg" alt="" aria-hidden="true" width="32" height="32" loading="lazy" />
+							</div>
+							<h3>JavaScript</h3>
+						</div>
 						<p>Adding interactivity, simple logic, and dynamic page behavior.</p>
 					</div>
 					<div class="skill-card">
-						<h3>PHP</h3>
+						<div class="skill-header">
+							<div class="skill-logo-wrap">
+								<img src="images/skills/php.svg" alt="" aria-hidden="true" width="32" height="32" loading="lazy" />
+							</div>
+							<h3>PHP</h3>
+						</div>
 						<p>Learning backend basics and server-side scripting.</p>
 					</div>
 					<div class="skill-card">
-						<h3>MySQL</h3>
+						<div class="skill-header">
+							<div class="skill-logo-wrap">
+								<img src="images/skills/mysql.svg" alt="" aria-hidden="true" width="32" height="32" loading="lazy" />
+							</div>
+							<h3>MySQL</h3>
+						</div>
 						<p>Working with databases to store and organize information.</p>
 					</div>
 					<div class="skill-card">
-						<h3>Git / GitHub</h3>
+						<div class="skill-header">
+							<div class="skill-logo-pair">
+								<div class="skill-logo-wrap">
+									<img src="images/skills/git.svg" alt="" aria-hidden="true" width="32" height="32" loading="lazy" />
+								</div>
+								<div class="skill-logo-wrap">
+									<img class="skill-logo-github" src="images/skills/github.svg" alt="" aria-hidden="true" width="32" height="32" loading="lazy" />
+								</div>
+							</div>
+							<h3>Git / GitHub</h3>
+						</div>
 						<p>Tracking changes and sharing code with version control.</p>
 					</div>
 				</div>
@@ -219,20 +259,38 @@
 				</div>
 				<div class="project-grid">
 					<article class="project-card">
-						<div class="project-tag">Web System</div>
-						<h3>EventBuds</h3>
-						<p>A web-based automated event scheduling system.</p>
+						<div class="project-card-content">
+							<div class="project-tag">Web System</div>
+							<h3>EventBuds</h3>
+							<p>A web-based automated event scheduling system.</p>
+						</div>
+						<div class="project-image-wrap" data-project="EventBuds" role="button" tabindex="0" aria-label="Enlarge screenshot of the EventBuds event scheduling system">
+							<img class="project-image" src="images/projects/eventbuds.png" alt="Screenshot of the EventBuds event scheduling system" width="1280" height="720" loading="lazy" onerror="this.hidden=true; this.parentElement.classList.add('is-fallback')" />
+							<span class="project-image-hint">Click to enlarge</span>
+						</div>
 					</article>
 					<article class="project-card">
-						<div class="project-tag">Web System</div>
-						<h3>Shlefmark</h3>
-						<p>Personal portfolio website showcasing my skills, experience, and projects as an IT student.</p>
+						<div class="project-card-content">
+							<div class="project-tag">Web System</div>
+							<h3>Shlefmark</h3>
+							<p>Personal portfolio website showcasing my skills, experience, and projects as an IT student.</p>
+						</div>
+						<div class="project-image-wrap" data-project="Shlefmark" role="button" tabindex="0" aria-label="Enlarge screenshot of the Shlefmark website">
+							<img class="project-image" src="images/projects/shlefmark.png" alt="Screenshot of the Shlefmark website" width="1280" height="720" loading="lazy" onerror="this.hidden=true; this.parentElement.classList.add('is-fallback')" />
+							<span class="project-image-hint">Click to enlarge</span>
+						</div>
 					</article>
 					<article class="project-card">
-						<div class="project-tag">Web-based Game</div>
-						<h3>TindahanniWyncel</h3>
-						<p>Tindahan ni Wyncel is a simple HTML-based game where players act as a street food vendor and serve customers’ orders as quickly and correctly as possible.</p>
-						<a class="project-link" href="https://tindahanniwyncel.vercel.app/" target="_blank" rel="noopener noreferrer">View Project</a>
+						<div class="project-card-content">
+							<div class="project-tag">Web-based Game</div>
+							<h3>TindahanniWyncel</h3>
+							<p>Tindahan ni Wyncel is a simple HTML-based game where players act as a street food vendor and serve customers’ orders as quickly and correctly as possible.</p>
+							<a class="project-link" href="https://tindahanniwyncel.vercel.app/" target="_blank" rel="noopener noreferrer">View Project</a>
+						</div>
+						<div class="project-image-wrap" data-project="TindahanniWyncel" role="button" tabindex="0" aria-label="Enlarge screenshot of the TindahanniWyncel street food game">
+							<img class="project-image" src="images/projects/tindahanniwyncel.png" alt="Screenshot of the TindahanniWyncel street food game" width="1280" height="720" loading="lazy" onerror="this.hidden=true; this.parentElement.classList.add('is-fallback')" />
+							<span class="project-image-hint">Click to enlarge</span>
+						</div>
 					</article>
 				</div>
 			</div>
@@ -282,6 +340,15 @@
 			<p id="footer-text">Built with HTML, CSS, and JavaScript.</p>
 		</div>
 	</footer>
+
+	<div class="project-lightbox" id="project-lightbox" role="dialog" aria-modal="true" aria-labelledby="lightbox-title" hidden>
+		<div class="project-lightbox-backdrop" data-lightbox-close></div>
+		<div class="project-lightbox-content">
+			<button class="project-lightbox-close" type="button" aria-label="Close enlarged screenshot">×</button>
+			<h2 id="lightbox-title" class="visually-hidden">Enlarged project screenshot</h2>
+			<img class="project-lightbox-image" alt="" />
+		</div>
+	</div>
 
 	<script src="script.js"></script>
 </body>
